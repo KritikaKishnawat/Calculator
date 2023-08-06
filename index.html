@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1 type="text" class="display" id="display"></h1>
+        <div class="row">
+
+            <button class="button" onclick="deleteDisplay()" id="ac">AC</button>
+            <button class="button" onclick="remove()" id="de">DE</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="digin(7)" name="digits" id="7">7</button>
+            <button class="button" onclick="digin(8)" name="digits" id="8">8</button>
+            <button class="button" onclick="digin(9)" name="digits" id="9">9</button>
+            <button class="button" onclick="opp('+')" id="+">+</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="digin(4)" name="digits" id="4">4</button>
+            <button class="button" onclick="digin(5)" name="digits" id="5">5</button>
+            <button class="button" onclick="digin(6)" name="digits" id="6">6</button>
+            <button class="button" onclick="opp('-')" id="-">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="digin(1)" name="digits" id="1">1</button>
+            <button class="button" onclick="digin(2)" name="digits" id="2">2</button>
+            <button class="button" onclick="digin(3)" name="digits" id="3">3</button>
+            <button class="button" onclick="opp('*')" id="*">*</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="digin(0)" name="" id="0">0</button>
+            <button class="button" onclick="result()" id="=">=</button>
+            <button class="button" onclick="opp('/')" id="/">/</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
